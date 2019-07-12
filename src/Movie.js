@@ -15,7 +15,6 @@ MoviePoster.propTypes = {
   poster:PropTypes.string.isRequired,
 }
 
-
 function Movie({title, poster}){
   return(
     <div>
