@@ -2,21 +2,20 @@ import React from 'react';
 import './Movie.css';
 
 
-function MoviePoster(){
+function MoviePoster({poster}){
   return(
     <div>
-      <h2>do</h2>
-      <img src="http://www.econovill.com/news/photo/201808/343844_214721_575.JPG"/>
+      <img src={poster}/>
     </div>
   )
 }
 
 
-function Movie(){
+function Movie({movie, poster}){
   return(
     <div>
-      <h1>Movie component</h1>
-      <MoviePoster/>
+      <h1>{movie}</h1>
+      <MoviePoster poster={poster}/>
     </div>
 
   )
