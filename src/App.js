@@ -22,7 +22,12 @@ const movies = [
 ]
 
 function App() {
-  console.log(!movies)
+//lifCycle
+// Render: componentWillMount() -> render() -> componentDidMount()
+// update: componentWillReceiveProps -> shouldComponentUpdate()
+          // -> componentWillUpdate() -> render() -> componentDidUpdate()
+
+
   return (
     <div className="App">
       { movies.length > 0 ? movies.map((movie, index)=><Movie key={index} title={movie.title} poster={movie.poster}/>) : "영화정보가 없습니다."}
